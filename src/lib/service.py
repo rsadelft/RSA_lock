@@ -1,2 +1,2 @@
 def start():
-    print("start1234567890")
+    print("123456")
