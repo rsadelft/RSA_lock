@@ -1,6 +1,5 @@
 import update, env, lib.requests, lib.logger, lib.requests, lib.timew, time, os, machine
 from lib import base64
-from lib.service import start
 
 t = lib.timew.Time(time=time)
 
@@ -29,5 +28,5 @@ try:
 except Exception as e:
     log('Failed to OTA update:', e)
 
-import src.lib.service
+from src.lib.service import start
 start()
