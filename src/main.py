@@ -29,4 +29,5 @@ try:
 except Exception as e:
     log('Failed to OTA update:', e)
 
+import src.lib.service
 start()
