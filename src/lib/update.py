@@ -67,7 +67,7 @@ class OTAUpdater:
 
   def __init__(
     self,
-    mainDir='/',
+    mainDir='src',
     nextDir='next',
     versionFile='.version',
     machine=None,
@@ -113,7 +113,7 @@ class OTAUpdater:
     self.github.download(remoteSha, self.nextDir, base=self.mainDir)
     self.io.writeFile(self.nextDir + '/' + self.versionFile, remoteSha)
     self.io.rmtree(self.mainDir)
-    self.io.move(self.nextDir, self.mainDir)
+    self.io.move(self.nextDir, "/")
 
 class GitHub:
   def __init__(self, requests=None, remote=None, io=None, logger=None, branch='master', username='', token='', base64=None):
