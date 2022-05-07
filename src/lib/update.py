@@ -4,6 +4,10 @@ class IO:
     self.log = logger(append='io')
 
   def rmtree(self, path):
+    if not self.exists(path):
+      print("not removing")
+      return
+
     self.log('Removing directory [%s]' % path)
     for entry in self.os.ilistdir(path):
       isDir = entry[1] == 0x4000
