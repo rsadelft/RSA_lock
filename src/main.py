@@ -26,7 +26,6 @@ github = update.GitHub(
 updater = update.OTAUpdater(io=io, github=github, logger=loggerOta, machine=machine)
 try:
     updater.update()
-    machine.reset()
 except Exception as e:
     log('Failed to OTA update:', e)
 
