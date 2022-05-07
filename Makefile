@@ -3,7 +3,7 @@ USER=
 REMOTE_PATH=/home/${USER}/${ROOT}
 IP=
 PATH_TEST=test
-ESP_IMAGE=esp32-idf4-20200902-v1.13.bin
+ESP_IMAGE=esp32-20220117-v1.18.bin
 ESP_IMAGE_URL=https://micropython.org/resources/firmware/${ESP_IMAGE}
 export RSHELL_PORT?=/dev/ttyUSB0
 
