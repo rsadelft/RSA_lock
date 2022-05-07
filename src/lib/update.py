@@ -67,7 +67,7 @@ class OTAUpdater:
 
   def __init__(
     self,
-    mainDir='src',
+    mainDir='/',
     nextDir='next',
     versionFile='.version',
     machine=None,
@@ -126,6 +126,7 @@ class GitHub:
 
     if username and token:
       self.headers = {'Authentication': 'Basic %s' % base64.b64encode(b'%s:%s' % (username, token))}
+      print(self.headers)
     else:
       self.headers = {}
 

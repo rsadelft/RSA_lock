@@ -9,6 +9,6 @@ settings = {
   # Auto-Updating
   'githubRemote': 'https://github.com/SkyloveQiu/RSA_lock',
   'githubUsername': 'SkyloveQiu', # Optional: Without this, you may hit API limits
-  'githubToken': '', # Optional: Without this, you may hit API limits0
+  'githubToken': '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', # Optional: Without this, you may hit API limits0
   'githubRemoteBranch': "master"
 }
