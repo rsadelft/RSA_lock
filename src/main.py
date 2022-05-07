@@ -5,7 +5,7 @@ from lib.service import start
 t = lib.timew.Time(time=time)
 
 # Configure Logger
-logger = lib.logger.config(enabled=False, include=env.settings['logInclude'], exclude=env.settings['logExclude'],
+logger = lib.logger.config(enabled=True, include=env.settings['logInclude'], exclude=env.settings['logExclude'],
                            time=t)
 log = logger(append='boot')
 log("The current time is %s" % t.human())
