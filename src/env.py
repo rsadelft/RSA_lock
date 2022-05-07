@@ -1,5 +1,5 @@
 settings = {
-  'wifiAP': 'RSA_device',
+  'wifiAP': 'RSA_Device',
   'wifiPassword': 'WeLoveRSA',
   'controllerName': 'grow-controller', # Used for DHCP hostname
   'logInclude': ['.*'], # regex supported
@@ -10,5 +10,5 @@ settings = {
   'githubRemote': 'https://github.com/SkyloveQiu/RSA_lock.git',
   'githubUsername': 'SkyloveQiu', # Optional: Without this, you may hit API limits
   'githubToken': '', # Optional: Without this, you may hit API limits0
-  'githubRemoteBranch': "main"
+  'githubRemoteBranch': "master"
 }

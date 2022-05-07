@@ -1,10 +1,11 @@
 import update, env, lib.requests, lib.logger, lib.requests, lib.timew, time, os, machine
 from lib import base64
+import lib.service
 
 t = lib.timew.Time(time=time)
 
 # Configure Logger
-logger = lib.logger.config(enabled=env.settings['debug'], include=env.settings['logInclude'], exclude=env.settings['logExclude'], time=t)
+logger = lib.logger.config(enabled=False, include=env.settings['logInclude'], exclude=env.settings['logExclude'], time=t)
 log = logger(append='boot')
 log("The current time is %s" % t.human())
 
@@ -28,5 +29,4 @@ try:
 except Exception as e:
   log('Failed to OTA update:', e)
 
-import src.main
-src.main.start(env=env, requests=lib.requests, logger=logger, time=t, updater=updater)
+lib.service.start()
