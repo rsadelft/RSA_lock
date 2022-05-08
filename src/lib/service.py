@@ -7,6 +7,6 @@ def start():
     p0.off()
     p1.freq(500)
     p1.duty(512)
-    time.sleep(5)
+    time.sleep(10)
     p0.on()
     p1.deinit()

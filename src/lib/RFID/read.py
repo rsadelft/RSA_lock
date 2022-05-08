@@ -8,7 +8,7 @@ miso = Pin(19, Pin.OUT)
 spi = SPI(baudrate=100000, polarity=0, phase=0, sck=sck, mosi=mosi, miso=miso)
 
 sda = Pin(5, Pin.OUT)
-
+)
 
 def do_read():
     try:
