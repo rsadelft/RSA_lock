@@ -7,7 +7,7 @@ settings = {
   'httpTimeout': 2, # seconds
 
   # Auto-Updating
-  'githubRemote': 'https://github.com/SkyloveQiu/RSA_lock',
+  'githubRemote': 'https://github.com/rsadelft/RSA_lock',
   'githubUsername': 'SkyloveQiu', # Optional: Without this, you may hit API limits
   'githubToken': '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', # Optional: Without this, you may hit API limits0
   'githubRemoteBranch': "master"
