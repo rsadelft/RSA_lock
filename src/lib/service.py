@@ -9,8 +9,8 @@ spi = SPI(baudrate=100000, polarity=0, phase=0, sck=sck, mosi=mosi, miso=miso)
 p0 = Pin(21, Pin.OUT)
 sda = Pin(5, Pin.OUT)
 
-
 def start():
+    p0.on()
     while True:
         rdr = MFRC522(spi, sda)
         uid = ""
